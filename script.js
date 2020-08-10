@@ -6,8 +6,7 @@ x.style.display = "none";
 
 function calljs()
 {
-   
-    var name = document.getElementById("fname").value;
+    var name = document.getElementById("fname").value+document.getElementById("lname").value;   
     var phone = document.getElementById("cno").value;
     var dob = document.getElementById("dob").value;
     var email = document.getElementById("email").value;
@@ -39,10 +38,10 @@ function calljs()
       gender="Other";
     }
     col1.innerHTML = name.toString();
-    col2.innerHTML = email.toString();
-    col3.innerHTML = phone.toString();
+    col2.innerHTML = phone.toString();
+    col3.innerHTML = dob.toString();
     col4.innerHTML = gender.toString();
-    col5.innerHTML = dob.toString();
+    col5.innerHTML = email.toString();
     col6.innerHTML = addr.toString();
     document.getElementById("forms").reset();
 
